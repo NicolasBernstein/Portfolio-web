@@ -67,6 +67,7 @@ height: 0%;
     background-color: darkblue;
     color: white;
     position: relative;
+    text-align: center;
 top: 5%;
     opacity: 0;
     transition: all 0.5s ease-in-out;
@@ -75,23 +76,38 @@ top: 5%;
 .card-text{
     font-size: 0.8rem;
 }
-
+.projectcard{
+width: 23rem;
+margin-top: 1rem;
+}
+#businessprojects{
+    width: 100%;
+    position: relative; 
+    display: flex;
+    height: auto;
+    flex-flow: row wrap;
+    align-items: baseline;
+    justify-content: space-around;
+}
 #selectprojectype{
     display: flex;
     flex-direction: row;
-    width: auto;
+    width: 18%;
     position: relative;
     height: 5vh;
     left: 40%;
     margin-top: 1%;
     justify-content: space-around;
-    max-width: 20%;
     background-color: black;
 }
 .selectorcontainer{
     margin-left: 0.1%;
     background-color: black;
     text-align: center;
+    width: auto;
+    height: 70%;
+    position: relative;
+    top: 18%;
     z-index: 2;
     background: linear-gradient(to left, transparent 50%, #6f42c1 50%);
 background-size: 200%;
@@ -101,6 +117,7 @@ transition: background-position 0.5s;
 .busineselector, .personalselector{
     text-align: center;
     width: 100%;
+    white-space: nowrap;
    /* background: linear-gradient(to right, transparent 0%, black 0%);*/
 height: 100%;
 color: white;

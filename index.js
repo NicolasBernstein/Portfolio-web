@@ -20,23 +20,23 @@ window.addEventListener('load', ()=>{
         })
         //fix in some phone heights
         if(window.innerHeight >= 700 && window.innerHeight <= 750){
-            imagecover.style = " background-color: rgba(111, 66, 193, 0.5); height: 108%";
-            body.style = `opacity: 1; top: 100%;`; 
+            imagecover.style = " background-color: rgba(111, 66, 193, 0.5); height: 138%";
+            body.style = `opacity: 1; top: 133%;`; 
         }else if(window.innerHeight >= 675 && window.innerHeight <= 699){
-            imagecover.style = " background-color: rgba(111, 66, 193, 0.5); height: 115%";
-            body.style = `opacity: 1; top: 107%;`; 
+            imagecover.style = " background-color: rgba(111, 66, 193, 0.5); height: 145%";
+            body.style = `opacity: 1; top: 140%;`; 
         }else if(window.innerHeight >= 650 && window.innerHeight <= 674){
-            imagecover.style = " background-color: rgba(111, 66, 193, 0.5); height: 120%";
-            body.style = `opacity: 1; top: 115%;`; 
+            imagecover.style = " background-color: rgba(111, 66, 193, 0.5); height: 154%";
+            body.style = `opacity: 1; top: 146%;`; 
         }else if(window.innerHeight >= 600 && window.innerHeight <= 649){
-            imagecover.style = " background-color: rgba(111, 66, 193, 0.5); height: 124%";
-            body.style = `opacity: 1; top: 115%;`;
+            imagecover.style = " background-color: rgba(111, 66, 193, 0.5); height: 160%";
+            body.style = `opacity: 1; top: 153%;`;
         } else if(window.innerHeight >= 550 && window.innerHeight <= 599){
-            imagecover.style = " background-color: rgba(111, 66, 193, 0.5); height: 140%";
-            body.style = `opacity: 1; top: 127%;`;
+            imagecover.style = " background-color: rgba(111, 66, 193, 0.5); height: 167%";
+            body.style = `opacity: 1; top: 160%;`;
         }else{      
-            body.style = `opacity: 1; top: 100%;`; 
-             imagecover.style = " background-color: rgba(111, 66, 193, 0.5); height: 100%";
+            body.style = `opacity: 1; top: 130%;`; 
+             imagecover.style = " background-color: rgba(111, 66, 193, 0.5); height: 138%";
     }
 
 
