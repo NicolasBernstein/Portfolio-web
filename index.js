@@ -18,8 +18,8 @@ window.addEventListener('load', ()=>{
         buttons.forEach(but =>{
             but.style = "opacity: 1;";
         })
-        imagecover.style = " background-color: rgba(111, 66, 193, 0.5); height: 108%";
-         body.style = `opacity: 1; bottom: -0.1rem;`;
+        imagecover.style = " background-color: rgba(111, 66, 193, 0.5); height: 100%";
+         body.style = `opacity: 1; top: 100%;`;
 
 
         })
@@ -34,7 +34,24 @@ window.addEventListener('load', ()=>{
             buttons.forEach(but =>{
                 but.style = "opacity: 0;";
             })
-            body.style = `opacity: 0; bottom: 9rem;`;
+            body.style = `opacity: 0; top: 0%;`;
         })
     })
+
+var selectors = document.querySelectorAll(".selectorcontainer");
+
+selectors.forEach(select =>{
+select.querySelector("div").addEventListener('click', ()=>{
+    selectors.forEach(removeselected =>{
+      removeselected.classList.remove('selected'); 
+      select.querySelector("div").removeAttribute('style');
+    })
+    /*
+    if(select.querySelector('div').id == "personalselector"){
+        select.querySelector("div").id = null;
+    }*/
+    select.classList.add('selected');
+
+})
+})
 })

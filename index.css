@@ -1,3 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
 body{
     background: linear-gradient(90deg, rgb(100, 199, 239)0%, rgb(201, 243, 156) 50%, rgb(227, 149, 244) 100%)
 }
@@ -14,12 +21,11 @@ text-align: center;
 }
 .card{
 max-height: 19vh;
-
 }
 
 .card-body{
-    position: relative;
-    bottom: 9rem;
+    position: absolute;
+    top: 0%;
     z-index: -5;
     background-color: white;
     opacity: 0;
@@ -27,15 +33,13 @@ max-height: 19vh;
 }
 #imagecover{
     width: 100%;
-    height: 0%;
+height: 0%;
     position: absolute;
    /* background-color: #6f42c1;
     opacity: 0.5;*/
     transition: all .5s ease-in-out;
     display: flex;
     align-items: center;
-
-    
 }
 
 .elementitle{
@@ -63,7 +67,7 @@ max-height: 19vh;
     background-color: darkblue;
     color: white;
     position: relative;
-top: 0.6rem;
+top: 5%;
     opacity: 0;
     transition: all 0.5s ease-in-out;
 
@@ -71,3 +75,55 @@ top: 0.6rem;
 .card-text{
     font-size: 0.8rem;
 }
+
+#selectprojectype{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.selectorcontainer{
+    margin-top: 2%;
+    margin-left: 0.1%;
+    z-index: 1;
+    background: linear-gradient(to left, transparent 50%, #ff8b07 50%);
+background-size: 200%;
+background-position: right;
+transition: background-position 0.5s;
+}
+.busineselector, .personalselector{
+    width: 100%;
+    background-color: black;
+    background: linear-gradient(to right, transparent 0%, black 0%);
+    background-position: left;  
+height: 100%;
+color: white;
+transition: all 0.5s ease-in-out;
+}
+
+
+.selectortext{
+width: 100%;
+height: 100%;
+}
+.busineselector:hover, .personalselector:hover{
+cursor: pointer;
+user-select: none;  
+}
+
+
+.selected{
+    background-position: left;
+    color: black;
+    font-weight: 700;
+}
+/*
+.beingselected{
+    width: 100%;
+    background-color: black;
+height: 100%;
+color: white;
+    background: linear-gradient(to right, transparent 100%, black 0%);
+}*/
+/*     background-position: left;
+color: black;
+font-weight: 700;*/
