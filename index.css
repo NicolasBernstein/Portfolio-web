@@ -79,22 +79,29 @@ top: 5%;
 #selectprojectype{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    width: auto;
+    position: relative;
+    height: 5vh;
+    left: 40%;
+    margin-top: 1%;
+    justify-content: space-around;
+    max-width: 20%;
+    background-color: black;
 }
 .selectorcontainer{
-    margin-top: 2%;
     margin-left: 0.1%;
-    z-index: 1;
-    background: linear-gradient(to left, transparent 50%, #ff8b07 50%);
+    background-color: black;
+    text-align: center;
+    z-index: 2;
+    background: linear-gradient(to left, transparent 50%, #6f42c1 50%);
 background-size: 200%;
 background-position: right;
 transition: background-position 0.5s;
 }
 .busineselector, .personalselector{
+    text-align: center;
     width: 100%;
-    background-color: black;
-    background: linear-gradient(to right, transparent 0%, black 0%);
-    background-position: left;  
+   /* background: linear-gradient(to right, transparent 0%, black 0%);*/
 height: 100%;
 color: white;
 transition: all 0.5s ease-in-out;
@@ -116,6 +123,20 @@ user-select: none;
     color: black;
     font-weight: 700;
 }
+
+
+@media screen and (min-height: 650px), screen and (max-height: 760px) {
+    #imagecover{
+        width: 100%;
+        position: absolute;
+       /* background-color: #6f42c1;
+        opacity: 0.5;*/
+        transition: all .5s ease-in-out;
+        display: flex;
+        align-items: center;
+    }
+}
+
 /*
 .beingselected{
     width: 100%;

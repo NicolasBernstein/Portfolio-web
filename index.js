@@ -18,8 +18,26 @@ window.addEventListener('load', ()=>{
         buttons.forEach(but =>{
             but.style = "opacity: 1;";
         })
-        imagecover.style = " background-color: rgba(111, 66, 193, 0.5); height: 100%";
-         body.style = `opacity: 1; top: 100%;`;
+        //fix in some phone heights
+        if(window.innerHeight >= 700 && window.innerHeight <= 750){
+            imagecover.style = " background-color: rgba(111, 66, 193, 0.5); height: 108%";
+            body.style = `opacity: 1; top: 100%;`; 
+        }else if(window.innerHeight >= 675 && window.innerHeight <= 699){
+            imagecover.style = " background-color: rgba(111, 66, 193, 0.5); height: 115%";
+            body.style = `opacity: 1; top: 107%;`; 
+        }else if(window.innerHeight >= 650 && window.innerHeight <= 674){
+            imagecover.style = " background-color: rgba(111, 66, 193, 0.5); height: 120%";
+            body.style = `opacity: 1; top: 115%;`; 
+        }else if(window.innerHeight >= 600 && window.innerHeight <= 649){
+            imagecover.style = " background-color: rgba(111, 66, 193, 0.5); height: 124%";
+            body.style = `opacity: 1; top: 115%;`;
+        } else if(window.innerHeight >= 550 && window.innerHeight <= 599){
+            imagecover.style = " background-color: rgba(111, 66, 193, 0.5); height: 140%";
+            body.style = `opacity: 1; top: 127%;`;
+        }else{      
+            body.style = `opacity: 1; top: 100%;`; 
+             imagecover.style = " background-color: rgba(111, 66, 193, 0.5); height: 100%";
+    }
 
 
         })
@@ -28,7 +46,7 @@ window.addEventListener('load', ()=>{
             var body = element.querySelector(".card-body");
             var imagecover = element.querySelector("#imagecover");
             imagecover.style = "background-color: rgba(111, 66, 193, 0.5); height: 0%;";
-            var buttons = element.querySelectorAll(".zindex")
+                    var buttons = element.querySelectorAll(".zindex")
             var elementitle = element.querySelector(".elementitle");
             elementitle.style = "opacity: 0;";
             buttons.forEach(but =>{
