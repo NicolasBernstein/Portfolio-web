@@ -62,14 +62,28 @@ selectors.forEach(select =>{
 select.querySelector("div").addEventListener('click', ()=>{
     selectors.forEach(removeselected =>{
       removeselected.classList.remove('selected'); 
+
       select.querySelector("div").removeAttribute('style');
     })
+
     /*
     if(select.querySelector('div').id == "personalselector"){
         select.querySelector("div").id = null;
     }*/
     select.classList.add('selected');
+    if(select.querySelector("div").innerHTML.trim() == "Business projects"){
+        console.log("business projects");
+        document.querySelector("#personalprojects").style = "display: none;";
+        document.querySelector("#businessprojects").style = "display: flex;";
+
+    }else{
+        console.log("personal projects");
+        document.querySelector("#personalprojects").style = "display: flex;";
+        document.querySelector("#businessprojects").style = "display: none;";
+    }
 
 })
 })
+
+
 })
