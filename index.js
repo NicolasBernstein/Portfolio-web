@@ -19,7 +19,7 @@ window.addEventListener('load', ()=>{
             but.style = "opacity: 1;";
         })
         //fix in some phone heights
-        if(window.innerHeight >= 700 && window.innerHeight <= 750){
+       /* if(window.innerHeight >= 700 && window.innerHeight <= 750){
             imagecover.style = " background-color: rgba(111, 66, 193, 0.5); height: 138%";
             body.style = `opacity: 1; top: 133%;`; 
         }else if(window.innerHeight >= 675 && window.innerHeight <= 699){
@@ -34,10 +34,15 @@ window.addEventListener('load', ()=>{
         } else if(window.innerHeight >= 550 && window.innerHeight <= 599){
             imagecover.style = " background-color: rgba(111, 66, 193, 0.5); height: 167%";
             body.style = `opacity: 1; top: 160%;`;
+        }else if(window.innerHeight >= 900 && window.innerHeight <= 980){
+            body.style = `opacity: 1; top: 107%;`; 
+             imagecover.style = " background-color: rgba(111, 66, 193, 0.5); height: 107%";
         }else{      
             body.style = `opacity: 1; top: 130%;`; 
              imagecover.style = " background-color: rgba(111, 66, 193, 0.5); height: 138%";
-    }
+    }*/
+    body.style = `opacity: 1; top: 100%;`; 
+    imagecover.style = " background-color: rgba(111, 66, 193, 0.5); height: 100%";
 
 
         })
