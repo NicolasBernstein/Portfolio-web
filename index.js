@@ -42,7 +42,7 @@ window.addEventListener('load', ()=>{
              imagecover.style = " background-color: rgba(111, 66, 193, 0.5); height: 138%";
     }*/
     body.style = `opacity: 1; top: 100%;`; 
-    imagecover.style = " background-color: rgba(111, 66, 193, 0.5); height: 100%";
+    imagecover.style = " background-color: rgba(111, 66, 193, 0.5); height: 110%";
 
 
         })
