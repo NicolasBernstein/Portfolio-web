@@ -5,6 +5,14 @@
     
 }
 
+#carouselcontainer{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+
 .carousel{
     display: flex;
     align-items: center;
@@ -13,7 +21,7 @@
     left: 12%;
     height: 50vh;
     border-radius: 2rem;
-    background-color: black;
+    background-color: rgb(39, 36, 36);
 }
 h4, h2, small, a{
     margin: 0;
@@ -105,6 +113,17 @@ text-align: center;
     left: 60%;
 }
 
+#node{
+    height: 100%;
+    position: relative;
+    top:80%;
+}
+#jquery{
+    height: 100%;
+    position: relative;
+    top: 110%;
+}
+
 .carusel a img{
     object-fit: cover;
   /*  height: 300px;*/
@@ -138,7 +157,7 @@ text-align: center;
 .carrusel-prev{
     position: absolute;
     overflow: visible;
-    left: -1%;
+    left: 2%;
 }
 
 .carrusel-next{
@@ -146,15 +165,6 @@ text-align: center;
 }
 
 
-.clearfix:before,
-.clearfix:after {
-    content: ".";    
-    display: block;    
-    height: 0;    
-    overflow: hidden; 
-}
-.clearfix:after { clear: both; }
-.clearfix { zoom: 1; } /* IE < 8 */
 
 
 
@@ -316,6 +326,25 @@ user-select: none;
     font-weight: 700;
 }
 
+footer{
+    background-color: white;
+    position: relative;
+    margin-top: auto;
+    bottom: 0%;
+    width: 100%;
+    height: 5vh;
+}
+#start{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 1vh;
+}
+
+#projectypeselector{
+    position: absolute;
+    top: 0;
+}
 /*
 @media screen and (min-height: 650px), screen and (max-height: 760px) {
     #imagecover{

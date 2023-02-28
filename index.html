@@ -16,8 +16,8 @@
 </head>
 <body>
 
-
-<nav class="navbar navbar-expand -lg navbar-black bg-black">
+    <div id="start"></div>
+<nav class="navbar sticky-top navbar-expand -lg navbar-black bg-black">
 
 <nav class="navbar-brand text-light" id="margin" href="#">Nicolas Bernstein</nav>
 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,15 +27,15 @@
 
     <ul class="navbar-nav ms-auto margin2">
         <li class="nav-item active">
-            <a class="nav-link text-light" href="#home">Home</a>
+            <a class="nav-link text-light" href="#start">Home</a>
         </li>
 
         <li class="nav-item active">
-            <a class="nav-link text-light" href="#home">Portfolio</a>
+            <a class="nav-link text-light" href="#start">Portfolio</a>
         </li>
 
         <li class="nav-item active">
-            <a class="nav-link text-light" href="#home">Skills</a>
+            <a class="nav-link text-light" href="#skills">Skills</a>
         </li>
 
         </ul>
@@ -44,9 +44,10 @@
 </div>
 </nav>
 <section id="selectprojectype">
+    <div id="projectypeselector"></div>
     <div class="selectorcontainer">
 
-<div class="busineselector"> 
+<div class="busineselector" id="busines"> 
 Business projects
 </div>
 </div>
@@ -136,14 +137,36 @@ Personal projects
 
             </div> 
 
-</section>
 
+            <div class="card projectcard"  > <!-- style="width:18rem;"-->
+                <section class="sections">
+                    <div class="edit"> <!--card-img-top-->
+        
+                        <section id="imagecover" style="background-color: rgba(111, 66, 193, 0.5);">
+                            <div class="elementitle">Portfolio web</div>
+                            <div class="buttons">
+                                <a href="https://github.com/NicolasBernstein/Portfolio-web" target="_blank" class="btn btn-primary zindex">Github</a>
+                                <a href="https://wenlambo.netlify.app/" target="_blank" class="btn btn-primary zindex">Deploy</a>
+                            </div>
+                        </section>
+                        <div class="card-body">
+                            <p class="card-text"> </p> 
+                            <!--Pagina web para token meme web3 para la red smartbch y dogechain, con dos amigos hicimos una pagina
+                                responsiva con html y css-->
+                        </div> 
+                    </section>
+            
+            
+                </div>
+        
+                    </div> 
+
+</section>
+<section id="carouselcontainer">
 <div class="carousel">
 
-<h2 id="">Skills</h2>
-
-<div class="carousel-list" id="carousel-list">
-    <button class="carrusel-arrow carrusel-prev clearfix" id="button-prev" data-button="button-prev"
+<h2 id="skills">Skills</h2>
+<button class="carrusel-arrow carrusel-prev clearfix" id="button-prev" data-button="button-prev"
 onclick="app.processingButton(event)">
 <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left"
     class="svg-inline--fa fa-chevron-left fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg"
@@ -153,6 +176,8 @@ onclick="app.processingButton(event)">
     </path>
 </svg>
 </button>
+<div class="carousel-list" id="carousel-list">
+
 
     <div class="carousel-track" id="track">
         
@@ -201,7 +226,7 @@ onclick="app.processingButton(event)">
                     <a >
                         <h4><small>NodeJs</small>  </h4>
                         <picture>
-                            <img src="imgs/carousel/nodejs.svg">
+                            <img id="node" src="imgs/carousel/nodejs.svg">
                         </picture>
                     </a>
                 </div>
@@ -214,7 +239,7 @@ onclick="app.processingButton(event)">
                         <a >
                             <h4><small>Jquery</small>  </h4>
                             <picture>
-                                <img src="imgs/carousel/jquery.png">
+                                <img id="jquery" src="imgs/carousel/jquery.png">
                             </picture>
                         </a>
                     </div>
@@ -241,9 +266,12 @@ onclick="app.processingButton(event)">
 </div>
 
 </div>
+</section>
 
 
+<footer>
 
+</footer>
 
 
 
