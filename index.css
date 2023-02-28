@@ -136,12 +136,27 @@ text-align: center;
 }
 
 .carrusel-prev{
-    left: 0;
+    position: absolute;
+    overflow: visible;
+    left: -1%;
 }
 
 .carrusel-next{
     right: 0px;
 }
+
+
+.clearfix:before,
+.clearfix:after {
+    content: ".";    
+    display: block;    
+    height: 0;    
+    overflow: hidden; 
+}
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; } /* IE < 8 */
+
+
 
 body{
     background: linear-gradient(90deg, rgb(100, 199, 239)0%, rgb(201, 243, 156) 50%, rgb(227, 149, 244) 100%)
