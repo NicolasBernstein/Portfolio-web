@@ -146,6 +146,9 @@ text-align: center;
     position: relative;
     top: 110%;
 }
+#git{
+   left: 150%;
+}
 
 .carusel a img{
     object-fit: cover;
